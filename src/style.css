@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.881);
+    color: aqua;
+}
+:root{
+    --tilte-color: red;
+    --inputs-color: green;
+    --outputs-color: white;
+    --trans-color: gold;
+}
+section{
+    margin: 50px 0;
+}
+.title{
+    color: var(--tilte-color);
+    text-align: center;
+    font-weight: 900;
+    text-transform: capitalize; 
+}
+#trans{
+    color: var(--trans-color);
+    animation-name: about;   
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+@keyframes about{
+    0%{
+        bottom: 0;
+        letter-spacing: 0px;
+
+    }
+    20%{
+        letter-spacing: 3px;
+        color: var(--outputs-color);
+    }
+    30%{
+        letter-spacing: 5px;
+        color: var(--outputs-color);
+    }
+    50%{
+        bottom: 30px;
+        letter-spacing: 7px;
+        color: var(--outputs-color);
+
+    }
+    60%{
+        bottom: 0;
+        letter-spacing: 5px;
+        color: var(--trans-color);
+    }
+    70%{
+       
+        letter-spacing: 3px;
+        color: var(--outputs-color);
+    }
+    80%{
+        letter-spacing: 0;
+        bottom: 0;
+        color: var(--outputs-color);
+    }
+    90%{
+        bottom: -30px;
+        letter-spacing: 7px;
+        color: var(--outputs-color);
+    }
+    95%{
+        letter-spacing: 3px;
+
+    }
+    100%{
+        bottom: 0;
+        letter-spacing: 0;
+        color: var(--trans-color);
+
+    }
+
+}
+.input{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    color: var(--inputs-color);
+    text-transform: capitalize;
+
+}
+.input .appli_name input{
+    width: 100%;
+    padding: 10px;
+}
+.input .collecton_of_data{
+    display: flex;
+    margin-top: 30px;
+}
+.input .collecton_of_data .user_name input{
+    width: 90%;
+    padding: 3px 10px;
+    margin-top: 8px;
+}
+.submit{
+    margin-top: 4%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.submit button{
+    width: 50%;
+    font-size: 27px;
+    height: 40px;
+    margin-bottom: 3%;
+}
+.choose{
+    width: 60%;
+    background: red;
+    height: 26%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 9px;
+    top: 45%;
+    left: 22%;
+    font-size: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(170, 241, 109);
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: white;
+    display: none;
+    z-index: 1;
+}
+.chosse_yes_no{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.yes_no{
+    display: flex;
+}
+.yes_no input{
+    width: 30px;
+    margin-right: 9px;
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.opacity{
+    opacity: 30%;
+}
+.update{
+    position: fixed;
+    background-color: blanchedalmond;
+    border: 6px blue solid;
+    width: 60%;
+    display: none;
+    left: 20%;
+    padding: 16px;
+    z-index: 1;
+    bottom: 18%;
+}
+.show_block{
+    display: block;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+thead td{
+    padding: 10px;
+    color: var(--tilte-color);
+    font-size: 25px;
+    text-transform: capitalize;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 10px;
+}
+tbody td{
+    padding: 30px 10px;
+    color: var(--outputs-color);
+    font-size: 20px;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 10px;
+}
+tbody td button{
+    width: 100%;
+    height: 30px;
+}
+tbody td button:hover{
+    cursor: pointer;
+}

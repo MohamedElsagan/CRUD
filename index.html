@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>information</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <section id="s1">
+        <div class="title">
+            <h1>information <span id="trans">about</span> me</h1>
+        </div>
+    </section>
+
+    <section id="s2">
+        <div class="input">
+
+            <div class="appli_name">
+                <label for="name">application name</label>
+                <input type="text" name="" id="name">
+            </div>
+
+            <div class="collecton_of_data">
+
+                <div class="user_name">
+                <label for="username">user name</label>
+                    <input type="text" name="" id="username">
+                </div>
+                <div class="user_name">
+                    <label for="new_pass">new password</label>
+                    <input type="text" name="" id="new_pass">
+                </div>
+                <div class="user_name">
+                    <label for="old_pass">old password</label>
+                    <input type="text" name="" id="old_pass">
+                </div>
+
+            </div>
+
+            <div class="submit"  id="s">
+                <button id="btn_submit">submit</button>
+                
+            </div>
+            <div class="submit" id="deleteall">
+                
+                
+            </div>
+        </div>
+
+
+        <div class="choose">
+            <label for="c1">are you sure from this ?</label>
+            <div class="chosse_yes_no">
+                
+                <div class="yes_no" onclick="yees()">
+                    <input type="radio" name="ch1" id="yes" value="" ><p>yes</p>
+                </div>
+                <div class="yes_no" onclick="noo()">
+                    <input type="radio" name="ch1" id="no" value=""><p>no</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    </section>
+
+    <section id="s3">
+        <table>
+            <thead>
+                <tr>
+                    <td>no</td>
+                    <td>application name</td>
+                    <td>user name</td>
+                    <td>new password</td>
+                    <td>old password</td>
+                    <td>update</td>
+                    <td>delete</td>
+                </tr>
+
+            </thead>
+            <tbody id="show">
+                
+            </tbody>
+                </table>
+        </section>
+
+<script src="src/main.js"></script>
+</body>
+</html>
